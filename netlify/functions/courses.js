@@ -49,6 +49,8 @@ exports.handler = async function(event) {
 
   // get the data from the document
 
+  // create an object with the course data to hold the return value from our lambda
+
   // set a new Array as part of the return value
 
   // ask Firebase for the sections corresponding to the Document ID of the course, wait for the response
@@ -58,10 +60,11 @@ exports.handler = async function(event) {
   // loop through the documents
     // get the document ID of the section
     // get the data from the section
+    // create an Object to be added to the return value of our lambda
     // ask Firebase for the lecturer with the ID provided by the section; hint: read "Retrieve One Document (when you know the Document ID)" in the reference
     // get the data from the returned document
-    // add the lecturer's name to the section's data
-    // add the section data to the courseData
+    // add the lecturer's name to the section Object
+    // add the section Object to the return value
     // 🔥 your code for the reviews/ratings goes here
 
   // return the standard response
